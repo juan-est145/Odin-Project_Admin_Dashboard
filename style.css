@@ -1,20 +1,32 @@
 body
 {
 	margin: 0;
+	height: 100vh;
 }
 
 .wrapper
 {
 	display: grid;
-	grid-template-columns: 1fr 4fr;
-	grid-template-rows: 1fr 5fr;
-	height: 100vh;
+	grid-template-columns: 1fr 6fr;
+	grid-template-rows: 1fr 10fr;
 }
 
 .wrapper > div
 {
 	background-color: aqua;
-	min-height: 50px;
-	min-width: 50px;
 	border: 1px solid;
+	display: grid;
+}
+
+.sidebar
+{
+	grid-row: 1/-1;
+	grid-template-rows: 1fr repeat(2, 6fr);
+}
+
+.logo
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);;
+	align-items: center;
 }
