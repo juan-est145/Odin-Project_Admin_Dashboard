@@ -12,7 +12,7 @@ span
 {
 	display: grid;
 	grid-template-columns: 1fr 6fr;
-	grid-template-rows: 1fr 10fr;
+	grid-template-rows: 1fr 6fr;
 	min-height: 100vh;
 }
 
@@ -44,4 +44,18 @@ span
 	top: 20px;
 	justify-content: center;
 	gap: 25px;
+}
+
+.upperbar
+{
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+
+button
+{
+	background-image: url("imgs/magnifying-glass-solid.svg");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	padding: 1em;
 }
