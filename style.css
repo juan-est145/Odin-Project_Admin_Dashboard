@@ -1,0 +1,20 @@
+body
+{
+	margin: 0;
+}
+
+.wrapper
+{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr 5fr;
+	height: 100vh;
+}
+
+.wrapper > div
+{
+	background-color: aqua;
+	min-height: 50px;
+	min-width: 50px;
+	border: 1px solid;
+}
