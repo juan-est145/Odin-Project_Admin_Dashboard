@@ -1,7 +1,11 @@
 body
 {
 	margin: 0;
-	height: 100vh;
+}
+
+span
+{
+	display: block;
 }
 
 .wrapper
@@ -9,6 +13,7 @@ body
 	display: grid;
 	grid-template-columns: 1fr 6fr;
 	grid-template-rows: 1fr 10fr;
+	height: 100vw;
 }
 
 .wrapper > div
@@ -21,12 +26,22 @@ body
 .sidebar
 {
 	grid-row: 1/-1;
-	grid-template-rows: 1fr repeat(2, 6fr);
+	grid-template-rows: minmax(50px, 100px) 6fr;
+	gap: 25px;
 }
 
 .logo
 {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);;
+	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
+}
+
+.side-links
+{
+	display: flex;
+	position: sticky;
+	top: 0px;
+	flex-direction: column;
+	gap: 25px;
 }
