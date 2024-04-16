@@ -58,6 +58,32 @@ span
 	grid-auto-flow: column;
 }
 
+.search-bar_area
+{
+	grid-template-columns: 3fr 1fr;
+	gap: clamp(15px,20px, 2em);
+	padding: 1em;
+}
+
+.search-bar_area > div
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: clamp(15px,20px, 2em);
+}
+
+.search-bar_area > div:nth-child(2)
+{
+	justify-content: center;
+}
+
+.search-bar_area input
+{
+	flex-grow: 1;
+	max-width: clamp(75%, 200em, 500px);
+}
+
 .search
 {
 	background-image: url("imgs/magnifying-glass-solid.svg");
