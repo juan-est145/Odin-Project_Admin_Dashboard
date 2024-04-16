@@ -25,9 +25,11 @@ body
 	--darkest_blue_color: hsla(209, 100%, 32%, 1);
 	--blue_buttons_active: hsla(239, 68%, 19%, 1);
 	--white_color: white;
+	--cards_color: #fafaf9;
+	--body_color:  #e7e5e4;
 	margin: 0;
 	font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	background-color: var(--white_color);
+	background-color: var(--body_color)
 }
 
 .shadow
@@ -270,12 +272,13 @@ body
 
 .project-cards
 {
-	background-color: white;
-	outline: solid black;
+	background-color: var(--cards_color);
 	padding: 0.5em 1em;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+	border-left: 10px solid var(--cyan_color);
+	border-radius: 0.5em;
 }
 
 .card-icons
@@ -298,13 +301,13 @@ body
 
 .announcements > div
 {
-	background-color: var(--grey_color);
+	background-color: var(--cards_color);
 }
 
 .trending > div
 {
 	display: grid;
 	grid-template-columns: 1fr 4fr;
-	background-color: var(--grey_color);
+	background-color: var(--cards_color);
 	align-items: center;
 }
