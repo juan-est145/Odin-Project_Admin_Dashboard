@@ -52,7 +52,7 @@ span
 	grid-template-rows: 1fr 2fr;
 }
 
-.upperbar > div
+.upperbar > div:first-child
 {
 	display: grid;
 	grid-auto-flow: column;
@@ -84,7 +84,7 @@ span
 	max-width: clamp(75%, 200em, 500px);
 }
 
-.search
+.search_button
 {
 	background-image: url("imgs/magnifying-glass-solid.svg");
 	background-color: transparent;
@@ -103,4 +103,43 @@ span
 .user_icon
 {
 	width: 3em;
+}
+
+.posting-area
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2em;
+	gap: 20px;
+}
+
+.posting-area > div
+{
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: center;
+	gap: 20px;
+}
+
+.posting-area > div:first-child
+{
+	grid-template-columns: 1fr 2fr;
+	place-items: center;
+}
+
+.posting-area .user_icon
+{
+	width: 5em;
+}
+
+.posting-area > div:first-child p
+{
+	font-size: 1.2rem;
+}
+
+.posting-area > div:first-child p b
+{
+	font-size: 1.6rem;
+	white-space: nowrap;
 }
