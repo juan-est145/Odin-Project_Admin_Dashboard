@@ -34,11 +34,6 @@ body
 	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-.side-links span
-{
-	display: block;
-}
-
 .wrapper
 {
 	display: grid;
@@ -84,12 +79,38 @@ body
 
 .side-links
 {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	position: sticky;
 	top: 20px;
-	justify-content: center;
-	gap: 25px;
+	justify-content: space-evenly;
+	gap: 50px;
 }
+
+.side-links > div
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.side-links > div img
+{
+	width: 1.8em;
+}
+
+.side-links > div a
+{
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: var(--white_color);
+	font-size: 1.2rem;
+}
+
 
 .upperbar
 {
