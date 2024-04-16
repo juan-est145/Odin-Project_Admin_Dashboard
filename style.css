@@ -268,17 +268,26 @@ body
 {
 	grid-column: 1/-1;
 	align-self: center;
+	font-size: 1.6rem;
 }
 
 .project-cards
 {
 	background-color: var(--cards_color);
-	padding: 0.5em 1em;
+	padding: 1em 2em;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 	border-left: 10px solid var(--cyan_color);
 	border-radius: 0.5em;
+}
+
+.project-cards span
+{
+	font-family: "Roboto medium";
+	font: bold;
+	font-size: 2rem;
+	white-space: nowrap;
 }
 
 .card-icons
@@ -290,7 +299,7 @@ body
 
 .card-icons img
 {
-	width: clamp(25px, 1.5em, 50px);
+	width: clamp(25px, 0.5em, 50px);
 }
 
 .side-content
