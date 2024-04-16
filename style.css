@@ -23,6 +23,7 @@ body
 	--cyan_color:#51F5D4;
 	--blue_color:hsla(209, 100%, 50%, 1);
 	--darkest_blue_color: hsla(209, 100%, 32%, 1);
+	--blue_buttons_active: hsla(239, 68%, 19%, 1);
 	--white_color: white;
 	margin: 0;
 	font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -225,6 +226,23 @@ body
 	font-size: 1.6rem;
 	font-family: "Roboto Medium";
 	white-space: nowrap;
+}
+
+.posting-area button
+{
+	width: 6em;
+	padding: 1em;
+	border-radius: 30px;
+	background-color: var(--dark_blue_color);
+	color: var(--white_color);
+	font-size: 1rem;
+	font-family: "Roboto medium";
+	border: none;
+}
+
+.posting-area button:active
+{
+	background-color: var(--blue_buttons_active);
 }
 
 .content
