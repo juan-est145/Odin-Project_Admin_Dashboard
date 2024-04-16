@@ -160,6 +160,12 @@ body
 	background-color: transparent;
 	background-repeat: no-repeat;
 	padding: 1em;
+	border: none;
+}
+
+.search_button:hover
+{
+	background-color: var(--grey_color);
 }
 
 .notifications
@@ -168,6 +174,12 @@ body
 	background-color: transparent;
 	background-repeat: no-repeat;
 	padding: 1em;
+	border: none;
+}
+
+.notifications:hover
+{
+	background-color: var(--grey_color);
 }
 
 .user_icon
