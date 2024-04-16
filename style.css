@@ -87,6 +87,7 @@ body
 	grid-template-columns: 3fr 1fr;
 	gap: clamp(15px,20px, 2em);
 	padding: 1em;
+	white-space: nowrap;
 }
 
 .search-bar_area > div
