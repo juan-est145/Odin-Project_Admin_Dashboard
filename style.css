@@ -52,10 +52,29 @@ span
 	grid-template-rows: 1fr 2fr;
 }
 
-button
+.upperbar > div
+{
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.search
 {
 	background-image: url("imgs/magnifying-glass-solid.svg");
 	background-color: transparent;
 	background-repeat: no-repeat;
 	padding: 1em;
+}
+
+.notifications
+{
+	background-image: url("imgs/bell-regular.svg");
+	background-color: transparent;
+	background-repeat: no-repeat;
+	padding: 1em;
+}
+
+.user_icon
+{
+	width: 3em;
 }
