@@ -52,14 +52,23 @@ body
 
 .logo
 {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0 1em;
 	align-items: center;
 }
 
-.logo span
+.logo img
+{
+	width: 4em;
+}
+
+.logo a
 {
 	font-family: "Roboto black";
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
 }
 
 .side-links
@@ -198,6 +207,22 @@ body
 {
 	background-color: white;
 	outline: solid black;
+	padding: 0.5em 1em;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.card-icons
+{
+	display: flex;
+	justify-content: flex-end;
+	gap: 5px;
+}
+
+.card-icons img
+{
+	width: clamp(25px, 1.5em, 50px);
 }
 
 .side-content
