@@ -115,7 +115,6 @@ body
 	display: grid;
 	grid-template-rows: 1fr 2fr;
 	background-color: var(--blue_color);
-	color: var(--white_color);
 }
 
 .upperbar > div:first-child
@@ -149,6 +148,10 @@ body
 {
 	flex-grow: 1;
 	max-width: clamp(75%, 200em, 500px);
+	background-color: #d1d5db;
+	border-style: none;
+	border-radius: 30px;
+	padding: 1em;
 }
 
 .search_button
