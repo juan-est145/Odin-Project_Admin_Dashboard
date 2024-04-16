@@ -323,7 +323,7 @@ body
 
 .announcements > div p
 {
-	border-bottom: /*#e7e5e4*/ var(--grey_color) 1px  solid;
+	border-bottom: var(--grey_color) 1px  solid;
 	margin: 10px 0;
 }
 
@@ -332,5 +332,15 @@ body
 	display: grid;
 	grid-template-columns: 1fr 4fr;
 	background-color: var(--cards_color);
+	gap: 0px 1em;
 	align-items: center;
+	border-radius: 0.5em;
+	padding: 0.6em 1.5em;
+}
+
+.trending span
+{
+	font-size: 0.8rem;
+	color: hsla(239, 6%, 32%, 1);
+	font-family: "Roboto medium";
 }
