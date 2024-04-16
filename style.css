@@ -308,9 +308,23 @@ body
 	flex-direction: column;
 }
 
+.side-content h4
+{
+	white-space: nowrap;
+	margin: 0px;
+}
+
 .announcements > div
 {
 	background-color: var(--cards_color);
+	border-radius: 0.5em;
+	padding: 0.6em 1.5em;
+}
+
+.announcements > div p
+{
+	border-bottom: /*#e7e5e4*/ var(--grey_color) 1px  solid;
+	margin: 10px 0;
 }
 
 .trending > div
